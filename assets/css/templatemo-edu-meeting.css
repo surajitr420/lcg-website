@@ -893,6 +893,9 @@ banner
     .caption h6{
         text-align: center;
     }
+    
+    
+    
 }
 
 /*
@@ -1165,10 +1168,11 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content {
     background: var(--gradient-1);
-    padding: 30px;
+    padding: 15px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     height: 8rem;
+    /* overflow-y: scroll; */
 }
 
 .meeting-item .down-content .date {
@@ -1180,6 +1184,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content .date h6 {
     font-size: 13px;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     color: #a12c2f;
@@ -1194,6 +1199,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content h4 {
     font-size: 18px;
+    
     color: #1f272b;
     font-weight: 600;
     display: inline-block;
@@ -1202,6 +1208,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content p {
     margin-left: 50px;
+    /* text-align: center; */
     color: var(--text-white);
     font-size: 14px;
     /* text-shadow: 0px 0px 1px black; */
@@ -1944,6 +1951,9 @@ responsive
     }
     .our-courses .owl-nav .owl-prev {
         left: -25px;
+    }
+    .meeting-item .down-content{
+        overflow-y: scroll ;
     }
 }
 
