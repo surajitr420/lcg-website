@@ -34,6 +34,9 @@
 }
 .details .title{
     width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .student-banner-image{
     width: 40%;
@@ -98,6 +101,7 @@
     background-color: #4CAF50;
     color: white;
     border-radius: 5px;
+    width:50%;
 }
 
 /* Modal styles */
@@ -190,6 +194,8 @@
     .details .title{
         text-align: center;
         width: 20rem;
+        justify-content: center;
+        align-items: center;
 
     }
 
