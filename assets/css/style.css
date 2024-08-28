@@ -1760,9 +1760,14 @@ section.contact-us .right-info ul li span {
 
 .addmission-open{
     position: fixed;
-    top: 110px;
+    bottom: 50px;
     z-index: 10020;
     right: 20px;
+    
+}
+.addmission-open .open-button{
+    border-radius: 100%;
+    
     
 }
 
@@ -1770,9 +1775,11 @@ section.contact-us .right-info ul li span {
     .addmission-open{
         top: 150px;
         
+        
     }
     .addmission-open .open-button{
         font-size: small;
+
         
         
     }
