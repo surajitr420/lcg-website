@@ -13,6 +13,7 @@
     --gradient-2: linear-gradient(to right, #176bf3,#0c57a2);
     --gradient-4: linear-gradient(to left, #005bea,#00c6fb);
     --gradient-3: linear-gradient(180deg, #ffffff,#b5dfeb);
+    --gradient-7: linear-gradient(to right , var( --shamrock-green ),#39e464);
 }
 
 
@@ -38,6 +39,8 @@
     width: 40%;
     /* border: 2px solid red; */
     overflow: hidden;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
 } 
 
 
@@ -71,7 +74,7 @@
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 20px;
-    background:#F7F7F7;
+    background:var(--gradient-3);
     
 }
 .departments .dept{
@@ -79,10 +82,12 @@
     /* border: 2px solid red; */
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--bg-white);
+    background: white;
     height:100%;
+    box-shadow: 0px 0px 2px black;
     
 }
+
 .departments .dept .dept-img{
     width: 100%;
     overflow: hidden;
@@ -90,7 +95,7 @@
 
 }
 .departments .dept p{
-    color: grey;
+    color: var(--text-black);
 
 }
 .departments .dept  img{

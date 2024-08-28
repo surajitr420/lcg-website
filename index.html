@@ -5,8 +5,15 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
+<!--
+        - primary meta tag
+    -->
+    <title>LCG Institute of Polytechnic</title>
+    <meta name="title" content="LCG Institute of Polytechnic" />
+    <meta
+      name="description"
+      content="LCG Institute of Polytechnic:Empowering Innovators with Industry-Relevant Education, Experienced Faculty, and Modern Facilities. Discover Our Diploma Programs for a Bright Future."
+    />
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
 
@@ -34,6 +41,7 @@ https://templatemo.com/tm-569-edu-meeting
 
     <!-- Sub Header -->
     <div class="sub-header">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-sm-8">
@@ -97,10 +105,11 @@ https://templatemo.com/tm-569-edu-meeting
                             <li class="has-sub">
                                 <a href="javascript:void(0)">Administration</a>
                                 <ul class="sub-menu">
-                                    <li><a href="student-welfare.html">Student Welfare Committee - 2023</a></li>
-                                    <li><a href="anti-ragging.html">Anti Ragging Committee - 2023</a></li>
-                                    <li><a href="complaint.html">Internal Complaint Commitee - 2023</a></li>
-                                    <li><a href="grievance-redemption.html">Grievance Redemtion Committee - 2023</a></li>
+                                    <li><a href="student-welfare.html">Student Welfare Committee - 2024</a></li>
+                                    <li><a href="anti-ragging.html">Anti Ragging Committee - 2024</a></li>
+                                    <li><a href="complaint.html">Internal Complaint Commitee - 2024</a></li>
+                                    <li><a href="grievance-redemption.html">Grievance Redemtion Committee - 2024</a>
+                                    </li>
                                     <li><a href="women-helpline.html">Women Helpline</a></li>
                                 </ul>
                             </li>
@@ -117,7 +126,7 @@ https://templatemo.com/tm-569-edu-meeting
                             </li>
                             <li><a href="courses.html">Courses</a></li>
                             <li><a href="facility.html">Facility</a></li>
-                            <li ><a href="about-us.html">About</a></li>
+                            <li><a href="about-us.html">About</a></li>
                             <li><a href="contact-us.html">Contact Us</a></li>
                         </ul>
                         <a class='menu-trigger'>
@@ -837,13 +846,171 @@ https://templatemo.com/tm-569-edu-meeting
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <p style="color: black;"> © 2023 All Rights Reserved by <span style="color:rgb(255, 8, 8) ;">Sikharthy
-                    Infotech Pvt. Ltd.</span>
-                <!-- <br>Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a> -->
-            </p>
-        </div>
+
+        <!-- Addmission Open -->
     </section>
+    <div class="addmission-open">
+        <button class="open-button" onclick="openModal()">Addmisson Open</button>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h4 style="color: black;">LCG Polytechnic Admission 2024</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="address1">Address</label>
+                        <input type="text" id="address1" name="address1" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="address2">Address 2</label>
+                        <input type="text" id="address2" name="address2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="tel" id="contactNumber" name="contactNumber" placeholder="+91 9876543210">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state">
+                            <option value="">Choose...</option>
+                            <!-- Add state options here -->
+                            <option value="state1">West Bengal</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip">
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="close-button" onclick="closeModal()">Close</button>
+                        <button type="submit" class="save-button">Save changes</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Addmission Open end -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section logo-section">
+                <img src="assets/logo/footer-logo.png" alt="LCG Logo" class="logo">
+                <h3>Visitors</h3>
+                <ul>
+                    <li style="color: #A0A0A0;">
+                        <div class="icon-bg"><span class="icon visitor-icon"></span></div></span>156889
+                    </li>
+                    <li>
+                        <div class="icon-bg"><span class="icon clock-icon"></span></div>
+                        <div class="datetime-container">
+                            <p id="datetime"></p>
+                        </div>
+                    </li>
+                </ul>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><span class="icon plus-icon"></span>Know More College</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>President's Message</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>Principal's Message</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>Our Vision & Mission</a></li>
+                </ul>
+            </div>
+            <div class="footer-section useful-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#"><span class="icon plus-icon"></span>AICTE INDIA</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>WB SCT & VE & SD</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>National Scholarship</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>Aikyashree Scholarship</a></li>
+                    <li><a href="#"><span class="icon plus-icon"></span>SC, ST & OBC Scholarship</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-us">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/Qgjd21cakH7uCgBu7">
+                            <div class="icon-bg"><span class="icon location-icon"></span></div>Lambodarpur, Suri,
+                            Birbhum, West Bengal pin - 731101
+                        </a>
+
+                    </li>
+                    <li><a href="tel:+919475887799">
+                            <div class="icon-bg"><span class="icon phone-icon"></span></div></span>+91-9475-887-799
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="mailto:lcgpolytechnic@gmail.com">
+                            <div class="icon-bg"><span class="icon email-icon"></span></div>lcgpolytechnic@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: rgb(255, 255, 255); font-size: 1rem;"> © 2024 All Rights Reserved by <span
+                    style="color:rgb(255, 8, 8) ;">Sikharthy
+                    Infotech Pvt. Ltd.</span>
+
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sikharthyinfotech/" target="_blank">
+                    <div class="icon-bg"><i class="fa fa-facebook"></i></div>
+                </a>
+                <!-- <a href="#"><img src="instagram-icon.png" alt="Instagram"></a> -->
+                <a href="https://www.instagram.com/sikharthyinfotech/" target="_blank">
+                    <div class="icon-bg"><i class="fa fa-instagram"></i></div>
+                </a>
+                <a href="https://www.linkedin.com/company/sikharthy-infotech-pvt-ltd/" target="_blank">
+                    <div class="icon-bg"><i class="fa fa-linkedin"></i></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        // Close the modal if the user clicks outside of it
+        window.onclick = function (event) {
+            if (event.target == document.getElementById("myModal")) {
+                closeModal();
+            }
+        }
+    </script>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->

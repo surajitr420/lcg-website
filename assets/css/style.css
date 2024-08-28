@@ -46,17 +46,22 @@ reset
 
 /* For WebKit browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px;
+    /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-    background: #EBF6F9; /* Background of the scrollbar track */
+    background: #EBF6F9;
+    /* Background of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #90A4AE; /* Scrollbar thumb color */
-    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
-    border: 3px solid #EBF6F9; /* Border around the thumb */
+    background-color: #90A4AE;
+    /* Scrollbar thumb color */
+    border-radius: 6px;
+    /* Rounded corners for the scrollbar thumb */
+    border: 3px solid #EBF6F9;
+    /* Border around the thumb */
 }
 
 /* For Firefox */
@@ -89,13 +94,13 @@ html {
     --royal-blue: #3D6FE3;
     --deep-blue-sky: #01BAFB;
     --shamrock-green: #2CCB78;
-    --dark-blue:#0c57a2;
-    --gradient-1: linear-gradient(to right,#005bea,#0c57a2);
+    --dark-blue: #0c57a2;
+    --gradient-1: linear-gradient(to right, #005bea, #0c57a2);
     --gradient-5: linear-gradient(to right, var(--deep-blue-sky), var(--shamrock-green));
     --gradient-6: linear-gradient(to left, var(--deep-blue-sky), var(--royal-blue), var(--shamrock-green));
-    --gradient-2: linear-gradient(to right, #176bf3,#0c57a2);
-    --gradient-4: linear-gradient(to left, #005bea,#00c6fb);
-    --gradient-3: linear-gradient(180deg, #ffffff,#b5dfeb);
+    --gradient-2: linear-gradient(to right, #176bf3, #0c57a2);
+    --gradient-4: linear-gradient(to left, #005bea, #00c6fb);
+    --gradient-3: linear-gradient(180deg, #ffffff, #b5dfeb);
 }
 
 html,
@@ -273,17 +278,21 @@ body {
 }
 
 @media (max-width: 991px) {
+
     html,
     body {
         overflow-x: hidden;
     }
+
     .mobile-top-fix {
         margin-top: 30px;
         margin-bottom: 0px;
     }
+
     .mobile-bottom-fix {
         margin-bottom: 30px;
     }
+
     .mobile-bottom-fix-big {
         margin-bottom: 60px;
     }
@@ -292,7 +301,8 @@ body {
 .main-button-red a {
     font-size: 13px;
     color: #fff;
-    background: var(--gradient-5);
+    background: var(--gradient-4);
+    border:1px solid var(--royal-blue);
     box-shadow: 0px 0px 5px black;
     padding: 12px 30px;
     display: inline-block;
@@ -304,7 +314,8 @@ body {
 
 .main-button-red a:hover {
     /* opacity: 0.9; */
-    background: var(--gradient-6);
+    /* background: var(--gradient-2); */
+    transform: scale(1.1);
 }
 
 .main-button-yellow a {
@@ -537,7 +548,7 @@ header
 
 .header-area .main-nav .nav li.has-sub ul.sub-menu {
     position: absolute;
-    width:max-content;
+    width: max-content;
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
     overflow: hidden;
     top: 40px;
@@ -719,7 +730,7 @@ header
     color: var(--royal-blue);
 }
 
-.logo{
+.logo {
     /* filter: drop-shadow(0px 0px 0.5px #ffffff); */
     /* filter: invert(); */
 }
@@ -729,6 +740,7 @@ header
         padding-left: 7px;
         padding-right: 7px;
     }
+
     .header-area .main-nav:before {
         display: none;
     }
@@ -738,14 +750,17 @@ header
     .header-area .main-nav .logo {
         color: #1e1e1e;
     }
+
     .header-area.header-sticky .nav li a:hover,
     .header-area.header-sticky .nav li a.active {
         color: var(--royal-blue) !important;
         opacity: 1;
     }
+
     .header-area.header-sticky .nav li.search-icon a {
         width: 100%;
     }
+
     .header-area {
         background-color: #f7f7f7;
         padding: 0px 15px;
@@ -753,18 +768,23 @@ header
         box-shadow: none;
         text-align: center;
     }
+
     .header-area .container {
         padding: 0px;
     }
+
     .header-area .logo {
         margin-left: 30px;
     }
+
     .header-area .menu-trigger {
         display: block !important;
     }
+
     .header-area .main-nav {
         overflow: hidden;
     }
+
     .header-area .main-nav .nav {
         float: none;
         width: 100%;
@@ -775,12 +795,15 @@ header
         transition: all 0s ease 0s;
         margin-left: 0px;
     }
+
     .header-area .main-nav .nav li:first-child {
         border-top: 1px solid #eee;
     }
+
     .header-area.header-sticky .nav {
         margin-top: 100px !important;
     }
+
     .header-area .main-nav .nav li {
         width: 100%;
         background: #fff;
@@ -788,6 +811,7 @@ header
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
+
     .header-area .main-nav .nav li a {
         height: 50px !important;
         line-height: 50px !important;
@@ -796,10 +820,12 @@ header
         background: #f7f7f7 !important;
         color: #191a20 !important;
     }
+
     .header-area .main-nav .nav li a:hover {
         background: #eee !important;
         color: var(--royal-blue) !important;
     }
+
     .header-area .main-nav .nav li.has-sub ul.sub-menu {
         position: relative;
         visibility: inherit;
@@ -812,22 +838,27 @@ header
         height: 0px;
         transition: all 0s;
     }
+
     .header-area .main-nav .nav li.submenu ul li a {
         font-size: 12px;
         font-weight: 400;
     }
+
     .header-area .main-nav .nav li.submenu ul li a:hover:before {
         width: 0px;
     }
+
     .header-area .main-nav .nav li.has-sub ul.sub-menu {
         height: auto;
     }
+
     .header-area .main-nav .nav li.has-sub:after {
         color: #3B566E;
         right: 30px;
         font-size: 14px;
         top: 15px;
     }
+
     .header-area .main-nav .nav li.submenu:hover ul,
     .header-area .main-nav .nav li.submenu:focus ul {
         height: 0px;
@@ -876,6 +907,8 @@ banner
     width: 100%;
 }
 
+
+
 .main-banner .caption {
     position: absolute;
     top: 50%;
@@ -923,13 +956,14 @@ banner
     .main-banner .caption h6 {
         font-weight: 500;
     }
+
     .main-banner .caption h2 {
         font-size: 36px;
     }
 }
 
-@media  screen and (max-width: 400px) {
-    .main-banner .caption h1{
+@media screen and (max-width: 400px) {
+    .main-banner .caption h1 {
         font-size: 3rem;
         text-align: center;
     }
@@ -938,20 +972,21 @@ banner
         text-align: center;
     }
 
-    .caption h6{
+    .caption h6 {
         text-align: center;
     }
 
-    .main-button-red  {
+    .main-button-red {
         display: flex;
         justify-content: center;
     }
+
     .main-button-red a {
         margin: auto;
     }
-    
-    
-    
+
+
+
 }
 
 /*
@@ -1077,20 +1112,21 @@ services
 /*-----------------------------------*\
     #AFFILIATION
 \*-----------------------------------*/
-#affiliation{
+#affiliation {
     /* height: 100vh; */
     margin-top: 500px;
     margin-bottom: 50px;
 }
+
 .affiliation {
     padding-block-end: 0;
-  }
-  
-  .affiliation .section-title {
+}
+
+.affiliation .section-title {
     margin-block-end: 50px;
-  }
-  
-  .affiliation-card {
+}
+
+.affiliation-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1101,21 +1137,21 @@ services
     padding: 30px;
     box-shadow: var(--shadow-3);
     color: white;
-  }
-  
-  .affiliation-list {
+}
+
+.affiliation-list {
     display: grid;
     gap: 15px;
-  }
-  
-  .affiliation-card .card-icon {
+}
+
+.affiliation-card .card-icon {
     margin-block-end: 20px;
     transition: var(--transition-2);
-  }
-  
-  .affiliation-card:is(:hover, :focus-visible) .card-icon {
+}
+
+.affiliation-card:is(:hover, :focus-visible) .card-icon {
     transform: scale(1.1);
-  }
+}
 
 
 
@@ -1256,7 +1292,7 @@ section.upcoming-meetings .categories .main-button-red a {
 
 .meeting-item .down-content h4 {
     font-size: 18px;
-    
+
     color: #1f272b;
     font-weight: 600;
     display: inline-block;
@@ -1722,7 +1758,160 @@ section.contact-us .right-info ul li span {
     font-weight: 700;
 }
 
-.footer {
+.addmission-open{
+    position: fixed;
+    top: 110px;
+    z-index: 10020;
+    right: 20px;
+    
+}
+
+@media screen and (max-width:767px){
+    .addmission-open{
+        top: 150px;
+        
+    }
+    .addmission-open .open-button{
+        font-size: small;
+        
+        
+    }
+}
+.open-button {
+    /* position: sticky; */
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px rgb(91, 174, 233);
+    border:1px solid white;
+    background:var(--gradient-4);
+    color: white;
+    border-radius: 5px;
+    width:max-content;
+
+}
+.open-button:hover {
+    border: 1px solid var(--royal-blue);
+    
+   
+
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.317);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    /* height: 80%; */
+    border-radius: 10px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form styles */
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 10px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Button styles */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.save-button, .close-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.close-button {
+    background-color: #f44336;
+    color: white;
+}
+
+/* media querry for addmission open */
+
+@media screen and (max-width:900px) {
+    
+    .modal-content {
+        width: 60%;
+    }
+
+}
+@media screen and (max-width:600px) {
+    
+    .modal-content {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width:391px) {
+    
+    .save-button, .close-button {
+        
+        font-size: 10px;
+        
+        
+    }
+
+}
+/* media querry for addmission open end */
+
+/* .footer {
     text-align: center;
     margin-top: 140px;
     border-top: 1px solid rgba(250, 250, 250, 0.15);
@@ -1733,10 +1922,215 @@ section.contact-us .right-info ul li span {
     text-transform: uppercase;
     font-size: 14px;
     color: #fff;
+} */
+
+
+.footer {
+    position: relative;
+    height: max-content;
+    margin-top: 5px;
+    background-color: #2C2C2C;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* padding: 200px 0 0 0; */
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 200px auto;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width:100%;
+}
+
+.footer-section ul li a {
+    color: #A0A0A0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    
+}
+
+.footer-section ul li a:hover {
+    color: #FFFFFF;
+}
+
+.footer-section .icon {
+    margin-right: 10px;
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7rem;
+    background-color: #1C1C1C;
+    padding: 20px 0;
+    text-align: center;
+    color: #FF0000;
+    font-size: 1.5rem;
+}
+
+.footer-bottom .social-icons img {
+    width: 24px;
+    margin: 0 10px;
+    opacity: 0.7;
+}
+
+.footer-bottom .social-icons .fa{
+    color:white;
+
+}
+.footer-bottom .social-icons .icon-bg{
+    padding: 0;
+    background: grey;
+    transition: all 1s ease-in-out;
+}
+.footer-bottom .social-icons .icon-bg:hover{
+    background: var(--gradient-5);
+}
+
+.footer-bottom .social-icons img:hover {
+    opacity: 1;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.icon-bg{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    
+    padding: 10px 0 0 10px;
+    
+    align-items: center;
+    border-radius:100%;
+    
+    
+    
+    background: var(--gradient-5);
+}
+
+.plus-icon {
+    background-image: url('/assets/footer-icons/plus-icon.svg');
+}
+
+.visitor-icon {
+    background-image: url('/assets/footer-icons/visitor.svg');
+
+
+
+
+
+}
+
+.clock-icon {
+    background-image: url('/assets/footer-icons/clock-icon.svg');
 }
 
 
 
+.location-icon {
+
+    background-image: url('/assets/footer-icons/location.svg');
+}
+
+.phone-icon {
+    background-image: url('/assets/footer-icons/phone.svg');
+}
+
+.email-icon {
+    background-image: url('/assets/footer-icons/mail.svg');
+
+}
+
+
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* date-time */
+.datetime-container {
+    /* background-color: #fff; */
+    
+    /* padding: 20px; */
+    border-radius: 10px;
+    /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+#datetime {
+    font-size: 1em;
+    /* color: var(--text-white); */
+    color: #A0A0A0;
+}
+
+
+/* media querry for footer */
+@media  screen and (max-width: 551px) {
+    .footer-section ul li {
+        
+        width:100%;
+    }
+}
+@media screen and (min-width:683px){
+    .footer-bottom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    
+}
 
 /*
 ---------------------------------------------
@@ -1999,17 +2393,21 @@ responsive
     .services .owl-nav .owl-next {
         right: -30px;
     }
+
     .services .owl-nav .owl-prev {
         left: -25px;
     }
+
     .our-courses .owl-nav .owl-next {
         right: -30px;
     }
+
     .our-courses .owl-nav .owl-prev {
         left: -25px;
     }
-    .meeting-item .down-content{
-        overflow-y: scroll ;
+
+    .meeting-item .down-content {
+        overflow-y: scroll;
     }
 }
 
@@ -2017,12 +2415,15 @@ responsive
     .services .owl-nav .owl-next {
         right: -70px;
     }
+
     .services .owl-nav .owl-prev {
         left: -65px;
     }
+
     .our-courses .owl-nav .owl-next {
         right: -70px;
     }
+
     .our-courses .owl-nav .owl-prev {
         left: -65px;
     }
@@ -2032,12 +2433,15 @@ responsive
     .services .owl-nav .owl-next {
         right: -30px;
     }
+
     .services .owl-nav .owl-prev {
         left: -25px;
     }
+
     .our-courses .owl-nav .owl-next {
         right: -30px;
     }
+
     .our-courses .owl-nav .owl-prev {
         left: -25px;
     }
@@ -2047,12 +2451,15 @@ responsive
     .services .owl-nav .owl-next {
         display: none;
     }
+
     .services .owl-nav .owl-prev {
         display: none;
     }
+
     .our-courses .owl-nav .owl-next {
         display: none;
     }
+
     .our-courses .owl-nav .owl-prev {
         display: none;
     }
@@ -2062,35 +2469,44 @@ responsive
     .main-banner .caption {
         top: 60%;
     }
+
     .main-banner .caption h2 {
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 22px;
     }
+
     .main-banner .caption .main-button-red {
         margin-top: 15px;
     }
+
     .services {
         margin-top: 60px;
     }
+
     section.upcoming-meetings {
         padding-top: 400px;
     }
+
     section.upcoming-meetings .categories {
         margin-right: 0px;
         margin-bottom: 30px;
     }
+
     .accordions {
         margin-left: 0px;
     }
+
     .new-students {
         margin-top: 15px;
     }
+
     section.our-facts .video {
         margin-left: 0px;
         margin-top: 15px;
         /* box-shadow: 0px 0px 110px black; */
     }
+
     section.contact-us #contact {
         margin-bottom: 30px;
     }
@@ -2100,12 +2516,15 @@ responsive
     .sub-header .left-content p {
         display: none;
     }
+
     .sub-header .right-icons {
         text-align: center;
     }
+
     .main-nav .nav .sub-menu {
         display: none;
     }
+
     .header-area .main-nav .nav li ul.sub-menu li a {
         color: #1f272b;
     }

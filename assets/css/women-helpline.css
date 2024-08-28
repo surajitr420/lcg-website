@@ -14,11 +14,14 @@
 .details ul li{
     color: grey;
 
+
 }
 .student-banner-image{
     width: 40%;
     /* border: 2px solid red; */
     overflow: hidden;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
 } 
 
 @media screen and (max-width: 700px) {

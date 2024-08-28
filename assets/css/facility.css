@@ -14,7 +14,9 @@
     --gradient-6: linear-gradient(to left, var(--deep-blue-sky), var(--royal-blue), var(--shamrock-green));
     --gradient-2: linear-gradient(to right, #176bf3,#0c57a2);
     --gradient-4: linear-gradient(to left, #005bea,#00c6fb);
-    --gradient-3: linear-gradient(180deg, #ffffff,#b5dfeb);
+    --gradient-7: linear-gradient(to right , var( --shamrock-green ),#39e464);
+    
+
 }
 
 
@@ -41,6 +43,8 @@
     width: 40%;
     /* border: 2px solid red; */
     overflow: hidden;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
 } 
 
 .facility-section{
@@ -48,6 +52,7 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
+    background: var(--gradient-3);
 }
 .facilities{
     display: flex;
@@ -59,7 +64,7 @@
 .facilities .facility-card{
     height: 25rem;
     width: 26rem;
-    background: var(--deep-blue-sky);
+    background: var(--gradient-4);
     /* border: 2px solid red; */
     display: flex;
     gap: 10px;
@@ -71,7 +76,7 @@
 }
 .facilities .facility-card:nth-child(2n){
     /* border: 2px solid green; */
-    background: var(--shamrock-green);
+    background: var(--gradient-7);
 
 }
 
@@ -84,13 +89,16 @@
 
 
 
+
+
 .facilities .facility-card .f-data{
     width: 80%;
     
 
 }
 .facilities .facility-card .f-data p{
-    color: black;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 0px 0px 2px rgb(255, 255, 255); */
     
 
 }

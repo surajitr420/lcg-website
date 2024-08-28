@@ -1,4 +1,29 @@
 (function ($) {
+	function formatDateTime() {
+		const options = {
+			weekday: 'long',
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			hour: 'numeric',
+			minute: 'numeric',
+			second: 'numeric',
+			hour12: true,
+			timeZone: 'Asia/Kolkata'
+		};
+
+		// Get the current date and time in the specified format
+		const now = new Date().toLocaleString('en-US', options);
+		return now + ' GMT+5:30';
+	}
+
+	// Set the formatted date and time in the HTML
+	document.getElementById('datetime').innerText = formatDateTime();
+
+	// Update the time every second
+	setInterval(() => {
+		document.getElementById('datetime').innerText = formatDateTime();
+	}, 1000);
 	
 	"use strict";
 

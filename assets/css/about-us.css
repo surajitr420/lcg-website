@@ -29,6 +29,11 @@
 }
 .student-banner-image{
     width: 40%;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 10px;
+        
+        
+    
     
 
     /* border: 2px solid red; */
