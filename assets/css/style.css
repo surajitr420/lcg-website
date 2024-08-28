@@ -575,7 +575,7 @@ header
 .header-area .main-nav .nav li.has-sub ul li a:hover,
 .header-area .main-nav .nav li.has-sub ul li a.active {
     color: white !important;
-    background-color: var(--royal-blue);
+    background-color: var(--royal-blue) !important;
     /* color: var(--royal-blue) !important; */
     padding-left: 25px;
 }
@@ -716,7 +716,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-    color: #CAFF00;
+    color: var(--royal-blue);
 }
 
 .logo{
