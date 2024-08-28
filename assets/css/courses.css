@@ -1,0 +1,122 @@
+:root {
+    --bg-white: white;
+    --text-white: white;
+    --text-black: black;
+    --text-white: white;
+    --royal-blue: #3D6FE3;
+    --deep-blue-sky: #01BAFB;
+    --shamrock-green: #2CCB78;
+    --dark-blue:#0c57a2;
+    --gradient-1: linear-gradient(to right,#005bea,#0c57a2);
+    --gradient-5: linear-gradient(to right, var(--deep-blue-sky), var(--shamrock-green));
+    --gradient-6: linear-gradient(to left, var(--deep-blue-sky), var(--royal-blue), var(--shamrock-green));
+    --gradient-2: linear-gradient(to right, #176bf3,#0c57a2);
+    --gradient-4: linear-gradient(to left, #005bea,#00c6fb);
+    --gradient-3: linear-gradient(180deg, #ffffff,#b5dfeb);
+}
+
+
+.details{
+    /* margin-top: 100px; */
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    text-align: left;
+    
+
+}
+.details ul li{
+    color: grey;
+    margin: 10px 0px;
+
+}
+.student-banner-image{
+    width: 40%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+} 
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .details{
+        flex-direction: column;
+    }
+    .details .title{
+        text-align: center;
+    }
+
+    .student-banner-image{
+        width: 80%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    } 
+}
+
+
+
+.departments{
+    padding: 50px;
+    width: 100%;
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+    background:#F7F7F7;
+    
+}
+.departments .dept{
+    width: 80%;
+    /* border: 2px solid red; */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--bg-white);
+    height:100%;
+    
+}
+.departments .dept .dept-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.departments .dept p{
+    color: grey;
+
+}
+.departments .dept  img{
+    transition: all 0.3s ease-in-out;
+}
+.departments .dept:hover img{
+    transform: scale(1.1);
+}
+.departments .dept:hover h4{
+    color:var(--royal-blue)
+}
+.departments .dept  h4{
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .departments{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        
+    }
+}
+
+
+
+

@@ -1,0 +1,137 @@
+
+
+:root {
+    --bg-white: white;
+    --text-white: white;
+    --text-black: black;
+    --text-white: white;
+    --royal-blue: #3D6FE3;
+    --deep-blue-sky: #01BAFB;
+    --shamrock-green: #2CCB78;
+    --dark-blue:#0c57a2;
+    --gradient-1: linear-gradient(to right,#005bea,#0c57a2);
+    --gradient-5: linear-gradient(to right, var(--deep-blue-sky), var(--shamrock-green));
+    --gradient-6: linear-gradient(to left, var(--deep-blue-sky), var(--royal-blue), var(--shamrock-green));
+    --gradient-2: linear-gradient(to right, #176bf3,#0c57a2);
+    --gradient-4: linear-gradient(to left, #005bea,#00c6fb);
+    --gradient-3: linear-gradient(180deg, #ffffff,#b5dfeb);
+}
+
+
+
+
+.details{
+    /* margin-top: 100px; */
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    text-align: left;
+    
+
+}
+.details ul li{
+    color: grey;
+
+}
+.student-banner-image{
+    width: 40%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+} 
+
+.facility-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.facilities{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+
+}
+.facilities .facility-card{
+    height: 25rem;
+    width: 26rem;
+    background: var(--deep-blue-sky);
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 1s;
+
+}
+.facilities .facility-card:nth-child(2n){
+    /* border: 2px solid green; */
+    background: var(--shamrock-green);
+
+}
+
+
+.facilities .facility-card:hover{
+    transform: scale(1.05);
+
+}
+
+
+
+
+.facilities .facility-card .f-data{
+    width: 80%;
+    
+
+}
+.facilities .facility-card .f-data p{
+    color: black;
+    
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .details{
+        flex-direction: column;
+    }
+
+    .student-banner-image{
+        width: 80%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    } 
+}
+
+@media screen and (max-width: 1475px){
+
+
+    .facilities{
+        flex-direction: column;
+        place-items: center;
+    }
+    
+    
+    .facilities .facility-card{
+        height: max-content;
+        width: 90%;
+        
+    
+    }
+}
+
+
+

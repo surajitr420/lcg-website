@@ -1,0 +1,116 @@
+.details{
+    /* margin-top: 100px; */
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    /* align-items: center; */
+    
+    text-align: left;
+    
+
+}
+
+.details .title{
+    width: 50%;
+}
+
+.student-banner-image{
+    width: 40rem;
+    height: 40rem;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    margin: 10px;
+} 
+
+@media screen and (max-width: 700px) {
+
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .student-banner-image{
+        width: 80%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    } 
+}
+
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* margin: 10px; */
+    /* max-width: 800px; */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* .form-group input:required,
+.form-group textarea:required {
+    border-color: #d9534f;
+} */
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    height: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #4cae4c;
+}
+
+@media screen and (max-width:700px) {
+    .details .title{
+        width: 80%;
+    }
+}

@@ -1,0 +1,85 @@
+.details{
+    /* margin-top: 100px; */
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    text-align: left;
+    
+    
+    
+
+}
+.details p{
+    color: grey;
+    font-size: 1rem;
+    text-align: justify;
+
+}
+.details .title{
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+.student-banner-image{
+    width: 40%;
+    
+
+    /* border: 2px solid red; */
+    overflow: hidden;
+} 
+
+@media screen and (max-width: 700px) {
+
+    .details{
+        flex-direction: column;
+        
+    }
+
+    .details .title{
+        
+        text-align: center;
+        
+    
+    }
+
+    
+    
+
+    .student-banner-image{
+        width: 80%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    } 
+}
+
+@media screen and (max-width: 566px){
+    .details .title{
+        width: 25rem;
+        
+    
+    }
+}
+@media screen and (max-width: 400px){
+    .details .title{
+        width: 20rem;
+        
+    
+    }
+}
+@media screen and (max-width: 320px){
+    .details .title{
+        width: 15rem;
+        
+    
+    }
+}
+
+
+

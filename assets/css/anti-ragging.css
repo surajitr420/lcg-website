@@ -1,0 +1,91 @@
+.details{
+    /* margin-top: 100px; */
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    
+    justify-content: center;
+    gap:50px;
+    align-items: center;
+    text-align: left;
+    
+
+}
+.details ul li{
+    color: grey;
+
+}
+.student-banner-image{
+    width: 40%;
+    /* border: 2px solid red; */
+    overflow: hidden;
+} 
+
+@media screen and (max-width: 700px) {
+
+    .details{
+        flex-direction: column;
+    }
+
+    .student-banner-image{
+        width: 80%;
+        /* border: 2px solid red; */
+        overflow: hidden;
+    } 
+}
+
+
+/* ---------------------------------members area------------------------------ */
+.members {
+    width: 90%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #89baf9;
+    border-radius: 5px;
+}
+
+.arrow {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg);
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 26px;
+}
+
+.content.show {
+    max-height: 200px; /* Adjust according to your content */
+}
+
+.content li{
+    list-style-type: decimal !important;
+    font-size: 1rem;
+}
+
+.members span{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 400px) {
+    .content{
+        overflow-y: scroll;
+        /* height: fit-content; */
+    }
+}
