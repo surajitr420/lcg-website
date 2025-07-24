@@ -17,6 +17,10 @@ In this project, we leveraged the powerful combination of HTML, CSS, Bootstrap, 
 - SOUBIK DAS (23600122085)
 
 - SUMAN PRAMANIK (236001220)
+  
+- Sanjoy Kumar Maity (23600122051)
+  
+- SAYAN KUMAR DAS (23600121010)
 
 
 # UNDER THE GUIDANCE OF
